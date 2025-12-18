@@ -1,0 +1,296 @@
+absence_id;student_id;name;first_name;horaire_id;module_id;module_numero;module_abrev;module_nom;module_nb_periodes_total;matiere_id;matiere_abrev;matiere_nom;absence_position;excuse
+9092;2323;Haji Fowsi;Ahmed;20260;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;0;1
+9093;2323;Haji Fowsi;Ahmed;20260;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;1;1
+9094;2323;Haji Fowsi;Ahmed;20260;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;2;1
+9095;2323;Haji Fowsi;Ahmed;20260;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;3;1
+9074;2323;Haji Fowsi;Ahmed;20406;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;0;1
+9075;2323;Haji Fowsi;Ahmed;20406;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;1;1
+9070;2323;Haji Fowsi;Ahmed;20279;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;1
+9071;2323;Haji Fowsi;Ahmed;20279;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;1
+9119;2323;Haji Fowsi;Ahmed;20288;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;2
+9148;2323;Haji Fowsi;Ahmed;20356;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;0;2
+9373;2323;Haji Fowsi;Ahmed;20327;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;2
+9491;2334;Pinto Pereira;Rafael;20289;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+9492;2334;Pinto Pereira;Rafael;20289;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;1;0
+9493;2334;Pinto Pereira;Rafael;20289;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;2;0
+9499;2334;Pinto Pereira;Rafael;20357;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;0;0
+9500;2334;Pinto Pereira;Rafael;20357;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;1;0
+9522;2334;Pinto Pereira;Rafael;20426;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+9605;2323;Haji Fowsi;Ahmed;20262;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;0;0
+9606;2323;Haji Fowsi;Ahmed;20262;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;1;0
+9607;2323;Haji Fowsi;Ahmed;20262;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;2;0
+9608;2323;Haji Fowsi;Ahmed;20262;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;3;0
+9638;2323;Haji Fowsi;Ahmed;20408;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;0;2
+9658;2323;Haji Fowsi;Ahmed;20398;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;2
+9709;2329;Carusone;Florian;20263;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;0;0
+9710;2329;Carusone;Florian;20263;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;1;0
+9711;2329;Carusone;Florian;20263;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;2;0
+9712;2329;Carusone;Florian;20263;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;3;0
+9713;2329;Carusone;Florian;20282;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+9714;2329;Carusone;Florian;20282;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+9840;2323;Haji Fowsi;Ahmed;20399;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;2
+9841;2338;Mirza;Sidra;20399;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;2
+9944;2323;Haji Fowsi;Ahmed;20330;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;0
+9945;2323;Haji Fowsi;Ahmed;20330;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;1;0
+9946;2323;Haji Fowsi;Ahmed;20330;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;2;0
+9999;2325;Dagry;Philippe-Alexandre;20410;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;0;0
+10000;2325;Dagry;Philippe-Alexandre;20410;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;1;0
+10016;2331;Naylor;Natasha Shiwen;25703;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;2
+10017;2334;Pinto Pereira;Rafael;25703;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;2
+10062;2325;Dagry;Philippe-Alexandre;20429;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+10063;2325;Dagry;Philippe-Alexandre;20429;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+10064;2323;Haji Fowsi;Ahmed;20429;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+10081;2323;Haji Fowsi;Ahmed;20331;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;0
+10082;2323;Haji Fowsi;Ahmed;20331;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;1;0
+10083;2323;Haji Fowsi;Ahmed;20331;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;2;0
+10090;2323;Haji Fowsi;Ahmed;20467;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;2
+10120;2336;Ceppi;Saleina;20391;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;0
+10121;2336;Ceppi;Saleina;20391;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;0
+10122;2323;Haji Fowsi;Ahmed;20391;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;2
+10123;2338;Mirza;Sidra;20391;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;2
+10168;2336;Ceppi;Saleina;20381;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;0
+10169;2336;Ceppi;Saleina;20381;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;1;0
+10170;2336;Ceppi;Saleina;20381;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;2;0
+10185;2334;Pinto Pereira;Rafael;20293;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+10380;2334;Pinto Pereira;Rafael;20402;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+10381;2334;Pinto Pereira;Rafael;20402;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+10383;2334;Pinto Pereira;Rafael;20392;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;0
+10384;2334;Pinto Pereira;Rafael;20392;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;0
+10396;2337;Barman;Samuel Yvan;20382;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;2
+10385;2334;Pinto Pereira;Rafael;20382;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;0
+10386;2334;Pinto Pereira;Rafael;20382;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;1;0
+10387;2334;Pinto Pereira;Rafael;20382;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;2;0
+10683;2323;Haji Fowsi;Ahmed;20295;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+10680;2334;Pinto Pereira;Rafael;20295;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+10724;2329;Carusone;Florian;20432;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+10726;2329;Carusone;Florian;20432;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+10721;2323;Haji Fowsi;Ahmed;20432;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+10722;2334;Pinto Pereira;Rafael;20432;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+10772;2323;Haji Fowsi;Ahmed;20267;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;0;2
+10771;2334;Pinto Pereira;Rafael;20267;1;SI100;CINF;Compléments d'informatique;308;120;IBDD;Introduction aux bases de données;0;2
+10792;2329;Carusone;Florian;20286;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+10793;2329;Carusone;Florian;20286;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+10824;2338;Mirza;Sidra;20404;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;1
+10825;2338;Mirza;Sidra;20404;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;1
+10835;2338;Mirza;Sidra;20394;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;1
+10836;2338;Mirza;Sidra;20394;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;1
+10871;2323;Haji Fowsi;Ahmed;20296;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+10872;2323;Haji Fowsi;Ahmed;20296;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;1;0
+10873;2323;Haji Fowsi;Ahmed;20296;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;2;0
+10906;2323;Haji Fowsi;Ahmed;20364;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;0;0
+10907;2323;Haji Fowsi;Ahmed;20364;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;1;0
+10919;2337;Barman;Samuel Yvan;20433;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+10918;2323;Haji Fowsi;Ahmed;20433;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+11008;2331;Naylor;Natasha Shiwen;20316;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;0;2
+11097;2334;Pinto Pereira;Rafael;20287;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+11098;2334;Pinto Pereira;Rafael;20287;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+11119;2334;Pinto Pereira;Rafael;20405;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+11120;2334;Pinto Pereira;Rafael;20405;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+11163;2334;Pinto Pereira;Rafael;20395;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;0
+11164;2334;Pinto Pereira;Rafael;20395;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;0
+11167;2324;Osmanovic;Bajro;20259;2;SI110;CGES;Compléments de gestion ;270;8;BECO;Bases d'économie;2;0
+11168;2324;Osmanovic;Bajro;20259;2;SI110;CGES;Compléments de gestion ;270;8;BECO;Bases d'économie;3;0
+11160;2334;Pinto Pereira;Rafael;20385;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;0;0
+11161;2334;Pinto Pereira;Rafael;20385;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;1;0
+11162;2334;Pinto Pereira;Rafael;20385;1;SI100;CINF;Compléments d'informatique;308;2;PRSW;Pratique de systèmes Windows;2;0
+11232;2325;Dagry;Philippe-Alexandre;20297;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;2;0
+11233;2325;Dagry;Philippe-Alexandre;20297;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;1;0
+11234;2325;Dagry;Philippe-Alexandre;20297;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+11205;2334;Pinto Pereira;Rafael;20297;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+11206;2334;Pinto Pereira;Rafael;20297;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;1;0
+11207;2334;Pinto Pereira;Rafael;20297;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;2;0
+11230;2325;Dagry;Philippe-Alexandre;20365;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;0;0
+11231;2325;Dagry;Philippe-Alexandre;20365;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;1;0
+11228;2334;Pinto Pereira;Rafael;20365;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;1;0
+11229;2334;Pinto Pereira;Rafael;20365;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;0;0
+11243;2325;Dagry;Philippe-Alexandre;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;0;0
+11244;2325;Dagry;Philippe-Alexandre;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;1;0
+11245;2325;Dagry;Philippe-Alexandre;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;2;0
+11246;2325;Dagry;Philippe-Alexandre;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;3;0
+11239;2334;Pinto Pereira;Rafael;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;0;0
+11240;2334;Pinto Pereira;Rafael;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;1;0
+11241;2334;Pinto Pereira;Rafael;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;2;0
+11242;2334;Pinto Pereira;Rafael;20424;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;3;0
+11266;2336;Ceppi;Saleina;20434;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+11269;2336;Ceppi;Saleina;20434;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+11273;2338;Mirza;Sidra;20434;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+11268;2334;Pinto Pereira;Rafael;20434;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+11271;2334;Pinto Pereira;Rafael;20434;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+11278;2336;Ceppi;Saleina;20346;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+11279;2336;Ceppi;Saleina;20346;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+11294;2334;Pinto Pereira;Rafael;20346;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+11295;2334;Pinto Pereira;Rafael;20346;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+11280;2336;Ceppi;Saleina;20375;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+11281;2336;Ceppi;Saleina;20375;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+11296;2334;Pinto Pereira;Rafael;20375;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+11297;2334;Pinto Pereira;Rafael;20375;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+11282;2336;Ceppi;Saleina;20307;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;0;0
+11283;2336;Ceppi;Saleina;20307;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;1;0
+11298;2334;Pinto Pereira;Rafael;20307;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;0;0
+11299;2334;Pinto Pereira;Rafael;20307;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;1;0
+11326;2333;Fernandes;Alexandre;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;0;0
+11327;2333;Fernandes;Alexandre;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;1;0
+11328;2333;Fernandes;Alexandre;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;2;0
+11329;2333;Fernandes;Alexandre;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;3;0
+11310;2331;Naylor;Natasha Shiwen;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;0;0
+11311;2331;Naylor;Natasha Shiwen;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;1;0
+11318;2331;Naylor;Natasha Shiwen;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;3;0
+11319;2331;Naylor;Natasha Shiwen;20317;2;SI110;CGES;Compléments de gestion ;270;9;MARK;Mark. et gestion comme;2;0
+11331;2338;Mirza;Sidra;20472;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;1
+11332;2338;Mirza;Sidra;20472;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;1;1
+11333;2338;Mirza;Sidra;20472;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;2;1
+11334;2338;Mirza;Sidra;20472;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;3;1
+11366;2323;Haji Fowsi;Ahmed;20554;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+11367;2323;Haji Fowsi;Ahmed;20554;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+11368;2334;Pinto Pereira;Rafael;20554;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+11369;2334;Pinto Pereira;Rafael;20554;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+11435;2323;Haji Fowsi;Ahmed;20435;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+11434;2338;Mirza;Sidra;20435;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;2
+11513;2323;Haji Fowsi;Ahmed;20617;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;0
+11514;2323;Haji Fowsi;Ahmed;20617;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;1;0
+11515;2323;Haji Fowsi;Ahmed;20617;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;2;0
+11516;2323;Haji Fowsi;Ahmed;20617;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;3;0
+11567;2323;Haji Fowsi;Ahmed;20599;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;0;0
+11568;2323;Haji Fowsi;Ahmed;20599;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;1;0
+11569;2323;Haji Fowsi;Ahmed;20599;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;2;0
+11593;2337;Barman;Samuel Yvan;20492;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11594;2337;Barman;Samuel Yvan;20492;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+11592;2323;Haji Fowsi;Ahmed;20492;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11603;2337;Barman;Samuel Yvan;20519;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;0;0
+11604;2337;Barman;Samuel Yvan;20519;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;1;0
+11615;2337;Barman;Samuel Yvan;20546;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;0;0
+11616;2337;Barman;Samuel Yvan;20546;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;1;0
+11621;2337;Barman;Samuel Yvan;20609;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;0;0
+11622;2337;Barman;Samuel Yvan;20609;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;11;RTAB;Résolution par tableur;1;0
+11773;2329;Carusone;Florian;20436;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+11774;2329;Carusone;Florian;20436;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+11775;2325;Dagry;Philippe-Alexandre;20436;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+11776;2325;Dagry;Philippe-Alexandre;20436;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+11771;2338;Mirza;Sidra;20436;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+11772;2338;Mirza;Sidra;20436;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+11788;2329;Carusone;Florian;20591;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+11789;2329;Carusone;Florian;20591;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+11792;2338;Mirza;Sidra;20591;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+11793;2338;Mirza;Sidra;20591;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+11814;2324;Osmanovic;Bajro;20627;2;SI110;CGES;Compléments de gestion ;270;10;IGEF;Introduction à la gestion financière;0;2
+11844;2329;Carusone;Florian;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11852;2329;Carusone;Florian;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+11845;2336;Ceppi;Saleina;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11853;2336;Ceppi;Saleina;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+11846;2325;Dagry;Philippe-Alexandre;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11856;2325;Dagry;Philippe-Alexandre;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+11849;2338;Mirza;Sidra;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11862;2338;Mirza;Sidra;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+11850;2334;Pinto Pereira;Rafael;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+11865;2334;Pinto Pereira;Rafael;20493;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+11854;2336;Ceppi;Saleina;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;0;0
+11855;2336;Ceppi;Saleina;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;1;0
+11857;2325;Dagry;Philippe-Alexandre;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;0;0
+11858;2325;Dagry;Philippe-Alexandre;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;1;0
+11863;2338;Mirza;Sidra;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;0;0
+11864;2338;Mirza;Sidra;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;1;0
+11866;2334;Pinto Pereira;Rafael;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;0;0
+11867;2334;Pinto Pereira;Rafael;20520;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;1;0
+11988;2337;Barman;Samuel Yvan;20437;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+12057;2337;Barman;Samuel Yvan;20619;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;2
+12058;2323;Haji Fowsi;Ahmed;20619;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;2
+12095;2324;Osmanovic;Bajro;20494;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;2
+12267;2337;Barman;Samuel Yvan;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;0;2
+12257;2323;Haji Fowsi;Ahmed;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;0;0
+12259;2323;Haji Fowsi;Ahmed;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;1;0
+12264;2323;Haji Fowsi;Ahmed;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;2;0
+12246;2338;Mirza;Sidra;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;0;0
+12253;2338;Mirza;Sidra;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;1;0
+12263;2338;Mirza;Sidra;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;2;0
+12247;2334;Pinto Pereira;Rafael;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;0;0
+12254;2334;Pinto Pereira;Rafael;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;1;0
+12262;2334;Pinto Pereira;Rafael;20575;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;2;0
+12274;2338;Mirza;Sidra;20485;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12275;2338;Mirza;Sidra;20485;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12276;2334;Pinto Pereira;Rafael;20485;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12277;2334;Pinto Pereira;Rafael;20485;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12337;2338;Mirza;Sidra;20584;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;0;0
+12338;2338;Mirza;Sidra;20584;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;1;0
+12339;2338;Mirza;Sidra;20584;5;SI111;OGEN;Outils pour la gestion d'entreprise;266;28;STAT;Statistiques;2;0
+12324;2337;Barman;Samuel Yvan;20438;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+12326;2323;Haji Fowsi;Ahmed;20438;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+12325;2338;Mirza;Sidra;20438;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;0;0
+12328;2338;Mirza;Sidra;20438;1;SI100;CINF;Compléments d'informatique;308;1;FOIN;Fondamentaux de l'informatique;1;0
+12331;2324;Osmanovic;Bajro;20457;2;SI110;CGES;Compléments de gestion ;270;6;IDRO;Introduction au Droit;0;0
+12332;2324;Osmanovic;Bajro;20457;2;SI110;CGES;Compléments de gestion ;270;6;IDRO;Introduction au Droit;1;0
+12329;2338;Mirza;Sidra;20593;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+12330;2338;Mirza;Sidra;20593;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+12333;2324;Osmanovic;Bajro;20593;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;0;0
+12334;2324;Osmanovic;Bajro;20593;3;SI130;BRIT1;Branches instrumentales 1;190;13;COMM;Communication;1;0
+12340;2338;Mirza;Sidra;20638;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;0;0
+12341;2338;Mirza;Sidra;20638;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;1;0
+12342;2338;Mirza;Sidra;20638;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;2;0
+12343;2338;Mirza;Sidra;20638;1;SI100;CINF;Compléments d'informatique;308;3;ILPR;Introduction aux langages de programmation;3;0
+12402;2324;Osmanovic;Bajro;20647;2;SI110;CGES;Compléments de gestion ;270;7;CPTA;Comptabilité;0;0
+12403;2324;Osmanovic;Bajro;20647;2;SI110;CGES;Compléments de gestion ;270;7;CPTA;Comptabilité;1;0
+12404;2324;Osmanovic;Bajro;20647;2;SI110;CGES;Compléments de gestion ;270;7;CPTA;Comptabilité;2;0
+12405;2324;Osmanovic;Bajro;20647;2;SI110;CGES;Compléments de gestion ;270;7;CPTA;Comptabilité;3;0
+12380;2329;Carusone;Florian;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;2
+12378;2323;Haji Fowsi;Ahmed;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;2
+12374;2338;Mirza;Sidra;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;0
+12375;2338;Mirza;Sidra;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;1;0
+12376;2338;Mirza;Sidra;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;2;0
+12377;2338;Mirza;Sidra;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;3;0
+12379;2334;Pinto Pereira;Rafael;20620;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;2
+12434;2337;Barman;Samuel Yvan;20602;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;1;0
+12435;2337;Barman;Samuel Yvan;20602;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;0;0
+12436;2337;Barman;Samuel Yvan;20602;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;2;0
+12439;2338;Mirza;Sidra;20602;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;1;0
+12442;2338;Mirza;Sidra;20602;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;2;0
+12443;2338;Mirza;Sidra;20602;7;SI120;INGP;Ingénierie Plateformes;198;24;RESE;Réseaux et services;0;0
+12416;2323;Haji Fowsi;Ahmed;20495;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;2
+12417;2334;Pinto Pereira;Rafael;20495;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+12418;2334;Pinto Pereira;Rafael;20495;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+12420;2334;Pinto Pereira;Rafael;20522;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;0;0
+12421;2334;Pinto Pereira;Rafael;20522;6;SI101;INGL1;Ingénierie logicielle 1;367;16;BDON;Bases de données;1;0
+12486;2326;Martins Constantino;Bruno;20549;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;0;0
+12487;2326;Martins Constantino;Bruno;20549;3;SI130;BRIT1;Branches instrumentales 1;190;14;ANGL;Anglais;1;0
+12516;2325;Dagry;Philippe-Alexandre;20558;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+12518;2325;Dagry;Philippe-Alexandre;20558;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+12519;2325;Dagry;Philippe-Alexandre;20351;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12520;2325;Dagry;Philippe-Alexandre;20351;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12545;2329;Carusone;Florian;20567;6;SI101;INGL1;Ingénierie logicielle 1;367;18;UML;UML Modélisation Unifiée;0;0
+12546;2329;Carusone;Florian;20567;6;SI101;INGL1;Ingénierie logicielle 1;367;18;UML;UML Modélisation Unifiée;1;0
+12656;2325;Dagry;Philippe-Alexandre;20567;6;SI101;INGL1;Ingénierie logicielle 1;367;18;UML;UML Modélisation Unifiée;0;0
+12657;2325;Dagry;Philippe-Alexandre;20567;6;SI101;INGL1;Ingénierie logicielle 1;367;18;UML;UML Modélisation Unifiée;1;0
+12547;2333;Fernandes;Alexandre;20567;6;SI101;INGL1;Ingénierie logicielle 1;367;18;UML;UML Modélisation Unifiée;0;0
+12548;2333;Fernandes;Alexandre;20567;6;SI101;INGL1;Ingénierie logicielle 1;367;18;UML;UML Modélisation Unifiée;1;0
+12575;2329;Carusone;Florian;20477;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;0
+12576;2329;Carusone;Florian;20477;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;0
+12579;2325;Dagry;Philippe-Alexandre;20477;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;0
+12580;2325;Dagry;Philippe-Alexandre;20477;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;0
+12582;2333;Fernandes;Alexandre;20477;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;0;0
+12583;2333;Fernandes;Alexandre;20477;7;SI120;INGP;Ingénierie Plateformes;198;22;TSYS;Théorie des syst. expl.;1;0
+12652;2324;Osmanovic;Bajro;20458;2;SI110;CGES;Compléments de gestion ;270;6;IDRO;Introduction au Droit;0;2
+12718;2324;Osmanovic;Bajro;20630;2;SI110;CGES;Compléments de gestion ;270;10;IGEF;Introduction à la gestion financière;0;2
+12725;2334;Pinto Pereira;Rafael;20621;1;SI100;CINF;Compléments d'informatique;308;5;IWEB;Introduction Web;0;0
+12748;2323;Haji Fowsi;Ahmed;20496;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;0
+12759;2323;Haji Fowsi;Ahmed;20496;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;1;0
+12744;2338;Mirza;Sidra;20496;6;SI101;INGL1;Ingénierie logicielle 1;367;17;MDLD;Modélisation des données;0;2
+12814;2329;Carusone;Florian;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+12815;2329;Carusone;Florian;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+12816;2336;Ceppi;Saleina;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+12817;2336;Ceppi;Saleina;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+12818;2325;Dagry;Philippe-Alexandre;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+12819;2325;Dagry;Philippe-Alexandre;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+12820;2323;Haji Fowsi;Ahmed;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+12821;2323;Haji Fowsi;Ahmed;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+12822;2334;Pinto Pereira;Rafael;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;0;0
+12823;2334;Pinto Pereira;Rafael;20559;3;SI130;BRIT1;Branches instrumentales 1;190;124;REMA;Renforcement Mathématiques;1;0
+12826;2329;Carusone;Florian;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12827;2329;Carusone;Florian;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12828;2336;Ceppi;Saleina;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12829;2336;Ceppi;Saleina;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12830;2325;Dagry;Philippe-Alexandre;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12831;2325;Dagry;Philippe-Alexandre;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12832;2323;Haji Fowsi;Ahmed;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12833;2323;Haji Fowsi;Ahmed;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12834;2334;Pinto Pereira;Rafael;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;0;0
+12835;2334;Pinto Pereira;Rafael;20352;3;SI130;BRIT1;Branches instrumentales 1;190;12;MATH;Mathématiques;1;0
+12910;2323;Haji Fowsi;Ahmed;20577;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;0;0
+12911;2323;Haji Fowsi;Ahmed;20577;6;SI101;INGL1;Ingénierie logicielle 1;367;15;ALGO;Algorithmique;1;0
