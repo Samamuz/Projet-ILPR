@@ -83,7 +83,7 @@ def load_csv(csv_path):
             )
 
             # Incréments
-            if absence == 1:
+            if absence == 0:
                 absences[student_id][module_id]["nb_absences"] += 1
                 absences[student_id][module_id]["par_matiere"][matiere_id]["abs"] += 1
 
