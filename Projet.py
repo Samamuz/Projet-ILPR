@@ -1,147 +1,95 @@
 import csv
-from pathlib import Path
-import argparse
-import sys
 
-# =========================
-# Dictionnaires principaux
-# =========================
+# On prépare des dictionnaires pour stocker les informations
+eleves = {}      # élève_id -> {"nom": ..., "prenom": ...}
+modules = {}     # module_id -> {"abrev": ..., "nb_periodes": ...}
+absences = {}    # élève_id -> module_id -> {"nb_abs": ..., "nb_exc": ...}
 
-eleves = {}
-modules = {}
-absences = {}
-
-
-def load_csv(csv_path):
-    """Charge le CSV d'absences depuis `csv_path`.
-    `csv_path` peut être un str ou un Path. Lance FileNotFoundError si absent.
-    """
-    csv_path = Path(csv_path)
-    if not csv_path.exists():
-        raise FileNotFoundError(f"Fichier CSV introuvable: {csv_path}")
-
-    def safe_int(value, default=0):
-        try:
-            if value is None or str(value).strip() == "":
-                return default
-            return int(value)
-        except (ValueError, TypeError):
-            return default
-
-    def process_reader(reader):
-        for row in reader:
-            # --- Élève ---
-            student_id = safe_int(row.get("student_id"))
-            nom = row.get("name", "")
-            prenom = row.get("first_name", "")
-
-            # --- Module ---
-            module_id = safe_int(row.get("module_id"))
-            periodes_total = safe_int(row.get("module_nb_periodes_total"))
-
-            # --- Absence ---
-            excuse = safe_int(row.get("excuse"))
-
-            # =========================
-            # eleves (référentiel)
-            # =========================
-            if student_id not in eleves:
-                eleves[student_id] = {"nom": nom, "prenom": prenom}
-
-            # =========================
-            # modules (référentiel)
-            # =========================
-            if module_id not in modules:
-                modules[module_id] = {
-                    "numero": row.get("module_numero", ""),
-                    "abrev": row.get("module_abrev", ""),
-                    "nom": row.get("module_nom", ""),
-                    "periodes_total": periodes_total,
-                }
-
-            # =========================
-            # absences (métier)
-            # =========================
-            absences.setdefault(student_id, {})
-            absences[student_id].setdefault(
-                module_id, {"nb_absences": 0, "nb_excuses": 0}
-            )
-
-            # Incréments adaptés à la logique demandée
-            if excuse in (0, 1):
-                absences[student_id][module_id]["nb_absences"] += 1
-                if excuse == 1:
-                    absences[student_id][module_id]["nb_excuses"] += 1
-
+# Fonction pour lire le fichier CSV et remplir les dictionnaires
+def lire_csv(nom_fichier):
     try:
-        with csv_path.open(encoding="utf-8", newline="") as f:
-            reader = csv.DictReader(f, delimiter=";")
-            process_reader(reader)
-    except UnicodeDecodeError:
-        with csv_path.open(encoding="cp1252", newline="") as f2:
-            reader = csv.DictReader(f2, delimiter=";")
-            process_reader(reader)
+        # Ouvre le fichier CSV
+        with open(nom_fichier, encoding="utf-8") as fichier:
+            lecteur = csv.DictReader(fichier, delimiter=";")
+            # Pour chaque ligne du fichier
+            for ligne in lecteur:
+                # Récupère l'identifiant de l'élève
+                eleve_id = int(ligne["student_id"])
+                # Ajoute l'élève s'il n'existe pas déjà
+                if eleve_id not in eleves:
+                    eleves[eleve_id] = {"nom": ligne["name"], "prenom": ligne["first_name"]}
+                # Récupère l'identifiant du module
+                module_id = int(ligne["module_id"])
+                # Ajoute le module s'il n'existe pas déjà
+                if module_id not in modules:
+                    modules[module_id] = {"abrev": ligne["module_abrev"], "nb_periodes": int(ligne["module_nb_periodes_total"])}
+                # Prépare la structure pour les absences
+                if eleve_id not in absences:
+                    absences[eleve_id] = {}
+                if module_id not in absences[eleve_id]:
+                    absences[eleve_id][module_id] = {"nb_abs": 0, "nb_exc": 0}
+                # Ajoute une absence (et excuse si besoin)
+                if int(ligne["excuse"]) in (0, 1):
+                    absences[eleve_id][module_id]["nb_abs"] += 1
+                    if int(ligne["excuse"]) == 1:
+                        absences[eleve_id][module_id]["nb_exc"] += 1
+    except:
+        print("Fichier CSV introuvable.")
+        exit(1)
 
+# Fonction pour afficher le tableau des absences
+def afficher_absences():
+    largeur_nom = 30   # Largeur de la colonne nom
+    largeur_col = 18   # Largeur des colonnes modules
 
-def print_report():
-    # Configuration des largeurs
-    name_w = 30
-    col_w = 18
+    # Trie les modules par abréviation
+    modules_tries = sorted(modules.items(), key=lambda x: x[1]["abrev"])
 
-    # Ordre des modules (par abréviation)
-    module_list = sorted(modules.items(), key=lambda kv: kv[1].get("abrev", ""))
+    # Affiche l'en-tête
+    ligne = f"{'Élève':{largeur_nom}}"
+    for _, module in modules_tries:
+        ligne += f" {module['abrev']:{largeur_col}}"
+    ligne += f" {'Total':{largeur_col}}"
+    print(ligne)
 
-    # En-tête
-    header = f"{'Élève':{name_w}}"
-    for _mid, minfo in module_list:
-        header += f" {minfo.get('abrev',''):{col_w}}"
-    header += f" {'Total':{col_w}}"
-    print(header)
-
-    # Lignes pour chaque élève (tri par nom, prénom)
-    for student_id in sorted(eleves.keys(), key=lambda sid: (eleves[sid].get('nom',''), eleves[sid].get('prenom',''))):
-        info = eleves[student_id]
-        name = f"{info.get('nom','')}, {info.get('prenom','')}"
-        row = f"{name:{name_w}}"
-
-        s_abs = 0
-        s_exc = 0
-        total_periods = 0
-
-        for mid, minfo in module_list:
-            periodes_total = minfo.get('periodes_total', 0)
-            total_periods += periodes_total
-
-            student_modules = absences.get(student_id, {})
-            mdata = student_modules.get(mid)
-
-            if not mdata or (mdata.get('nb_absences', 0) == 0 and mdata.get('nb_excuses', 0) == 0):
-                cell = '-'
-                row += f" {cell:{col_w}}"
+    # Affiche chaque élève (trié par nom, prénom)
+    for eleve_id in sorted(eleves, key=lambda x: (eleves[x]["nom"], eleves[x]["prenom"])):
+        eleve = eleves[eleve_id]
+        ligne = f"{eleve['nom']}, {eleve['prenom']:{largeur_nom-2}}"
+        total_abs = 0
+        total_exc = 0
+        total_per = 0
+        # Pour chaque module, affiche les absences
+        for module_id, module in modules_tries:
+            nb_periodes = module["nb_periodes"]
+            total_per += nb_periodes
+            # Récupère les absences pour ce module
+            infos = absences[eleve_id].get(module_id, {"nb_abs":0, "nb_exc":0})
+            if infos["nb_abs"] == 0:
+                ligne += f" {'-':{largeur_col}}"  # Pas d'absence
             else:
-                nb_abs = mdata.get('nb_absences', 0)
-                nb_exc = mdata.get('nb_excuses', 0)
-                pct = (nb_abs / periodes_total * 100) if periodes_total > 0 else 0.0
-                cell = f"{nb_abs} / {periodes_total} ({pct:.1f}%)"
-                row += f" {cell:{col_w}}"
-                s_abs += nb_abs
-                s_exc += nb_exc
+                pourcent = infos["nb_abs"] / nb_periodes * 100 if nb_periodes > 0 else 0
+                cellule = f"{infos['nb_abs']} / {nb_periodes} ({pourcent:.1f}%)"
+                ligne += f" {cellule:{largeur_col}}"
+                total_abs += infos["nb_abs"]
+                total_exc += infos["nb_exc"]
+        # Affiche le total pour l'élève
+        total_cellule = f"{total_abs} / {total_exc} / {total_per}"
+        ligne += f" {total_cellule:{largeur_col}}"
+        print(ligne)
 
-        total_cell = f"{s_abs} / {s_exc} / {total_periods}"
-        row += f" {total_cell:{col_w}}"
-        print(row)
-
-
+# Programme principal
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Charger et afficher les absences depuis un fichier CSV")
-    parser.add_argument("--csv", type=Path, default=Path(__file__).parent / "absences.csv", help="Chemin vers le fichier absences.csv")
-    args = parser.parse_args()
-
-    try:
-        load_csv(args.csv)
-    except FileNotFoundError as e:
-        print("Erreur lors de l'ouverture du CSV:\n", e, file=sys.stderr)
-        print("Placez `absences.csv` dans le même dossier que le script ou lancez-le avec --csv <chemin>", file=sys.stderr)
-        sys.exit(1)
-
-    print_report()
+    # On récupère le chemin du fichier CSV
+    from pathlib import Path
+    import sys
+    dossier = Path(__file__).parent
+    if len(sys.argv) > 1:
+        chemin = Path(sys.argv[1])
+        if not chemin.is_absolute():
+            chemin = dossier / chemin
+    else:
+        chemin = dossier / "absences.csv"
+    # On lit le fichier et on affiche le tableau
+    lire_csv(str(chemin))
+    afficher_absences()
