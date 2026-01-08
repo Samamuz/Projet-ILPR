@@ -82,14 +82,13 @@ def load_csv(csv_path):
                 matiere_id, {"abs": 0, "exc": 0}
             )
 
-            # Incréments
-            if absence == 0:
+            # Incréments adaptés à la logique demandée
+            if excuse in (0, 1):
                 absences[student_id][module_id]["nb_absences"] += 1
                 absences[student_id][module_id]["par_matiere"][matiere_id]["abs"] += 1
-
-            if excuse == 1:
-                absences[student_id][module_id]["nb_excuses"] += 1
-                absences[student_id][module_id]["par_matiere"][matiere_id]["exc"] += 1
+                if excuse == 1:
+                    absences[student_id][module_id]["nb_excuses"] += 1
+                    absences[student_id][module_id]["par_matiere"][matiere_id]["exc"] += 1
 
     try:
         with csv_path.open(encoding="utf-8", newline="") as f:
