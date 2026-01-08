@@ -1,6 +1,6 @@
 # Explication détaillée du programme d'affichage des absences
 
-Ce document explique, étape par étape, le fonctionnement du programme Python qui lit un fichier CSV d'absences et affiche un tableau récapitulatif. Tout est expliqué pour un débutant !
+Ce document explique, étape par étape, le fonctionnement du programme Python qui lit un fichier CSV d'absences et affiche un tableau récapitulatif.
 
 ## 1. À quoi sert ce programme ?
 
