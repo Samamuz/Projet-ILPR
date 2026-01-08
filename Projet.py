@@ -39,11 +39,7 @@ def load_csv(csv_path):
             module_id = safe_int(row.get("module_id"))
             periodes_total = safe_int(row.get("module_nb_periodes_total"))
 
-            # --- Matière ---
-            matiere_id = safe_int(row.get("matiere_id"))
-
             # --- Absence ---
-            absence = safe_int(row.get("absence_position"))
             excuse = safe_int(row.get("excuse"))
 
             # =========================
@@ -61,13 +57,6 @@ def load_csv(csv_path):
                     "abrev": row.get("module_abrev", ""),
                     "nom": row.get("module_nom", ""),
                     "periodes_total": periodes_total,
-                    "matieres": {},
-                }
-
-            if matiere_id not in modules[module_id]["matieres"]:
-                modules[module_id]["matieres"][matiere_id] = {
-                    "abrev": row.get("matiere_abrev", ""),
-                    "nom": row.get("matiere_nom", ""),
                 }
 
             # =========================
@@ -75,20 +64,14 @@ def load_csv(csv_path):
             # =========================
             absences.setdefault(student_id, {})
             absences[student_id].setdefault(
-                module_id, {"nb_absences": 0, "nb_excuses": 0, "par_matiere": {}}
-            )
-
-            absences[student_id][module_id]["par_matiere"].setdefault(
-                matiere_id, {"abs": 0, "exc": 0}
+                module_id, {"nb_absences": 0, "nb_excuses": 0}
             )
 
             # Incréments adaptés à la logique demandée
             if excuse in (0, 1):
                 absences[student_id][module_id]["nb_absences"] += 1
-                absences[student_id][module_id]["par_matiere"][matiere_id]["abs"] += 1
                 if excuse == 1:
                     absences[student_id][module_id]["nb_excuses"] += 1
-                    absences[student_id][module_id]["par_matiere"][matiere_id]["exc"] += 1
 
     try:
         with csv_path.open(encoding="utf-8", newline="") as f:
@@ -100,7 +83,6 @@ def load_csv(csv_path):
             process_reader(reader)
 
 
-##FONCTION POUR TESTER L'IMPORTATION
 def print_report():
     # Configuration des largeurs
     name_w = 30
