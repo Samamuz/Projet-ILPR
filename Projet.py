@@ -1,12 +1,23 @@
+
 import csv
+from pathlib import Path
+import sys
 
 # On prépare des dictionnaires pour stocker les informations
-eleves = {}      # élève_id -> {"nom": ..., "prenom": ...}
-modules = {}     # module_id -> {"abrev": ..., "nb_periodes": ...}
-absences = {}    # élève_id -> module_id -> {"nb_abs": ..., "nb_exc": ...}
+# élève_id -> {"nom": ..., "prenom": ...}
+# module_id -> {"abrev": ..., "nb_periodes": ...}
+# élève_id -> module_id -> {"nb_abs": ..., "nb_exc": ...}
 
-# Fonction pour lire le fichier CSV et remplir les dictionnaires
 def lire_csv(nom_fichier):
+    """
+    Lit le fichier CSV et retourne trois dictionnaires :
+    - eleves : infos sur chaque élève
+    - modules : infos sur chaque module
+    - absences : absences par élève et par module
+    """
+    eleves = {}
+    modules = {}
+    absences = {}
     try:
         # Ouvre le fichier CSV
         with open(nom_fichier, encoding="utf-8") as fichier:
@@ -36,9 +47,12 @@ def lire_csv(nom_fichier):
     except:
         print("Fichier CSV introuvable.")
         exit(1)
+    return eleves, modules, absences
 
-# Fonction pour afficher le tableau des absences
-def afficher_absences():
+def afficher_absences(eleves, modules, absences):
+    """
+    Affiche le tableau des absences à partir des dictionnaires fournis.
+    """
     largeur_nom = 30   # Largeur de la colonne nom
     largeur_col = 18   # Largeur des colonnes modules
 
@@ -78,11 +92,10 @@ def afficher_absences():
         ligne += f" {total_cellule:{largeur_col}}"
         print(ligne)
 
-# Programme principal
-if __name__ == "__main__":
-    # On récupère le chemin du fichier CSV
-    from pathlib import Path
-    import sys
+def charger_chemin_csv():
+    """
+    Récupère le chemin du fichier CSV à utiliser (argument ou défaut).
+    """
     dossier = Path(__file__).parent
     if len(sys.argv) > 1:
         chemin = Path(sys.argv[1])
@@ -90,6 +103,19 @@ if __name__ == "__main__":
             chemin = dossier / chemin
     else:
         chemin = dossier / "absences.csv"
-    # On lit le fichier et on affiche le tableau
-    lire_csv(str(chemin))
-    afficher_absences()
+    return str(chemin)
+
+def main():
+    """
+    Fonction principale qui orchestre la lecture et l'affichage.
+    """
+    # On récupère le chemin du fichier CSV
+    chemin_csv = charger_chemin_csv()
+    # On lit le fichier et on récupère les données
+    eleves, modules, absences = lire_csv(chemin_csv)
+    # On affiche le tableau
+    afficher_absences(eleves, modules, absences)
+
+# Bloc principal : ce code ne s'exécute que si on lance ce fichier directement
+if __name__ == "__main__":
+    main()
