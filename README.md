@@ -1,68 +1,33 @@
-# Explication détaillée du programme d'affichage des absences
+But du programme
+Ce programme lit un fichier CSV (tableur) qui contient les absences des élèves par matière (module) et affiche un tableau récapitulatif des absences pour chaque élève.
 
-Ce document explique, étape par étape, le fonctionnement du programme Python qui lit un fichier CSV d'absences et affiche un tableau récapitulatif.
+Comment ça marche ?
 
-## 1. À quoi sert ce programme ?
+Il utilise des modules Python :
+csv pour lire le fichier CSV.
+pathlib pour gérer les chemins de fichiers.
+sys pour récupérer les arguments donnés au lancement du script.
+Fonctionnement étape par étape :
+Lecture du CSV :
+La fonction lire_csv lit le fichier CSV et range les informations dans trois dictionnaires :
 
-Ce programme permet de :
-- Lire un fichier CSV (tableur) contenant les absences des élèves par module.
-- Compter le nombre d'absences (et d'excuses) pour chaque élève et chaque module.
-- Afficher un tableau récapitulatif lisible dans la console.
+eleves : les informations sur chaque élève (nom, prénom).
+modules : les informations sur chaque matière (abréviation, nombre de périodes).
+absences : le nombre d’absences (et d’absences excusées) pour chaque élève et chaque matière.
+Affichage :
+La fonction afficher_absences affiche un tableau :
 
-## 2. Structure du fichier CSV attendu
+Chaque ligne correspond à un élève.
+Chaque colonne correspond à une matière.
+On voit le nombre d’absences, le nombre de périodes, et le pourcentage d’absences.
+À la fin de chaque ligne, il y a un total pour l’élève.
+Choix du fichier CSV :
+Le programme prend le nom du fichier CSV à lire :
 
-Le fichier CSV doit contenir des colonnes comme :
-- `student_id` : identifiant unique de l'élève
-- `name` : nom de l'élève
-- `first_name` : prénom de l'élève
-- `module_id` : identifiant du module
-- `module_abrev` : abréviation du module (ex : MATH, HIST)
-- `module_nb_periodes_total` : nombre total de périodes pour ce module
-- `excuse` : 0 (absence non excusée) ou 1 (absence excusée)
+Soit donné en argument lors du lancement.
+Soit il prend par défaut le fichier absences.csv dans le même dossier.
+Lancement :
+Quand on lance le fichier, il exécute la fonction principale qui fait tout le travail.
 
-Chaque ligne correspond à une absence.
-
-## 3. Les grandes étapes du programme
-
-### a) Import des modules
-- `csv` : pour lire le fichier CSV facilement.
-- `pathlib` et `sys` : pour gérer les chemins de fichiers et les arguments de la ligne de commande.
-
-### b) Préparation des "dictionnaires"
-- `eleves` : pour stocker les informations sur chaque élève.
-- `modules` : pour stocker les informations sur chaque module.
-- `absences` : pour stocker, pour chaque élève et chaque module, le nombre d'absences et d'excuses.
-
-### c) Fonction `lire_csv(nom_fichier)`
-- Ouvre le fichier CSV.
-- Lit chaque ligne du fichier.
-- Ajoute l'élève dans `eleves` s'il n'y est pas déjà.
-- Ajoute le module dans `modules` s'il n'y est pas déjà.
-- Prépare la structure pour compter les absences.
-- Incrémente le nombre d'absences et d'excuses selon la colonne `excuse`.
-- Si le fichier n'existe pas, affiche un message d'erreur.
-
-### d) Fonction `afficher_absences()`
-- Affiche l'en-tête du tableau (noms des modules).
-- Pour chaque élève (trié par nom, prénom) :
-    - Affiche le nom et le prénom.
-    - Pour chaque module, affiche le nombre d'absences et le pourcentage par rapport au nombre de périodes.
-    - Affiche le total des absences, des excuses et des périodes pour l'élève.
-
-### e) Programme principal
-- Cherche le fichier CSV dans le même dossier que le script, sauf si un autre chemin est donné en argument.
-- Appelle `lire_csv()` pour charger les données.
-- Appelle `afficher_absences()` pour afficher le tableau.
-
-## 4. Exemple d'utilisation
-
-- Place le fichier `absences.csv` dans le même dossier que le script Python.
-- Ouvre un terminal dans ce dossier.
-- Lance le programme avec :
-  ```
-  python 1.1.py
-  ```
-- Ou, pour utiliser un autre fichier :
-  ```
-  python 1.1.py mon_fichier.csv
-  ```
+En résumé :
+Ce programme permet de transformer un fichier d’absences d’élèves (format tableur) en un tableau lisible qui résume les absences de chaque élève par matière.
