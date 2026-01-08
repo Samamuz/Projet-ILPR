@@ -66,16 +66,3 @@ Chaque ligne correspond à une absence.
   ```
   python 1.1.py mon_fichier.csv
   ```
-
-## 5. Astuces pour débutant
-- Les dictionnaires sont comme des "boîtes" pour ranger des informations avec des étiquettes.
-- On utilise beaucoup les boucles `for` pour parcourir les élèves et les modules.
-- Les fonctions permettent de découper le programme en petits morceaux faciles à comprendre.
-- Les commentaires (lignes qui commencent par `#`) expliquent ce que fait chaque partie du code.
-
-## 6. Pour aller plus loin
-- On peut modifier le programme pour afficher d'autres statistiques.
-- On peut ajouter une sauvegarde des résultats dans un nouveau fichier.
-- On peut améliorer l'affichage pour qu'il soit plus joli ou plus compact.
-
-N'hésite pas à relire le code source en parallèle de ce document pour bien comprendre chaque étape !
