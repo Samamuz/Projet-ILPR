@@ -113,5 +113,5 @@ def main():
     afficher_absences(eleves, modules, absences)
 
 # On lance la fonction principale
- main()
+main()
 
