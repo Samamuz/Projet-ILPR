@@ -59,10 +59,10 @@ def afficher_absences(eleves, modules, absences):
     modules_tries = sorted(modules.items(), key=lambda x: x[1]["abrev"])
 
     # On prépare la première ligne du tableau (en-tête)
-    entetes = ["Élève".ljust(largeur_nom)]  # Titre de la colonne des élèves
+    entetes = ["Élève".center(largeur_nom)]  # Titre de la colonne des élèves
     for _, module in modules_tries:
-        entetes.append(str(module['abrev']).ljust(largeur_col))  # Titre de chaque module
-    entetes.append("Total".ljust(largeur_col))  # Colonne pour le total
+        entetes.append(str(module['abrev']).center(largeur_col))  # Titre de chaque module
+    entetes.append("Total".center(largeur_col))  # Colonne pour le total
     print(" ".join(entetes))  # On affiche l'en-tête
 
     # On affiche chaque élève, trié par nom puis prénom
@@ -79,17 +79,17 @@ def afficher_absences(eleves, modules, absences):
             # On récupère les infos d'absence pour ce module (ou 0 si aucune absence)
             infos = absences[eleve_id].get(module_id, {"nb_abs":0, "nb_exc":0})
             if infos["nb_abs"] == 0:
-                ligne.append("-".ljust(largeur_col))  # Si aucune absence, on affiche un tiret
+                ligne.append("-".center(largeur_col))  # Si aucune absence, on affiche un tiret
             else:
                 # On calcule le pourcentage d'absences
                 pourcent = infos["nb_abs"] / nb_periodes * 100 if nb_periodes > 0 else 0
                 cellule = f"{infos['nb_abs']} / {nb_periodes} ({pourcent:.1f}%)"  # Exemple : 2 / 30 (6.7%)
-                ligne.append(cellule.ljust(largeur_col))
+                ligne.append(cellule.center(largeur_col))
                 total_abs += infos["nb_abs"]  # On ajoute au total
                 total_exc += infos["nb_exc"]  # On ajoute au total excusé
         # On prépare la cellule de total pour l'élève
         total_cellule = f"{total_abs} / {total_exc} / {total_per}"  # absences / excusées / périodes
-        ligne.append(total_cellule.ljust(largeur_col))
+        ligne.append(total_cellule.center(largeur_col))
         print(" ".join(ligne))  # On affiche la ligne complète
 
 def charger_chemin_csv():
