@@ -100,6 +100,7 @@ def charger_chemin_csv(fichier_csv):
     dossier = Path(__file__).parent #prendre le chemin d'accès de notre fichier python
     return str(dossier / fichier_csv) #y ajouter le nom du fichier CSV
 
+
 def main():
     """
     Fonction principale qui orchestre la lecture et l'affichage.
@@ -111,8 +112,6 @@ def main():
     # On affiche le tableau récapitulatif des absences
     afficher_absences(eleves, modules, absences)
 
-# Bloc principal : ce code ne s'exécute que si on lance ce fichier directement
-if __name__ == "__main__":
-    # On lance la fonction principale
-    main()
+# On lance la fonction principale
+ main()
 
